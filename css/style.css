@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'futura';
+}
+
+body {
+  height: 100vh;
+  padding: 20px;
+}
+
+.icon>img {
+  height: 10vh;
+}
+
+.infoI>img {
+  float: left;
+  height: 20vh
+}
+
+.header {
+  float: left;
+}
+
+article {
+  display: flex;
+  border-top: 2px solid black;
+  align-items: center;
+  padding: 15px;
+  justify-content: center;
+}
+
+.info1 {
+  float: left;
+  clear: none;
+  width: 52vw;
+  min-width: 20vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.infoT {
+  float: left;
+  font-size: 5em;
+  padding-left: 2vw;
+  padding-top: 1vh;
+}
+
+.infoM {
+  float: left;
+  padding-top: 2vh;
+}
+
+.info2 {
+  float: right;
+  padding-top: 2vh;
+  padding-left: 2vw;
+  min-width: 20vw;
+  clear: none;
+  text-align: left;
+  line-height: 2em;
+}
+
+main {
+  float: left;
+  width: 100vw;
+  clear: both;
+}
+
+footer {
+  float: left;
+  width: 100%;
+}
+
+.day,
+.icon,
+.temp,
+.pollen {
+  width: 25vw;
+}
+
+.day,
+.infoT,
+.tDay {
+  font-weight: 700;
+}
+
+@media screen and (min-width:780px) {
+  .article {
+    flex-direction: column;
+    width: 12vw;
+    justify-content: space-between;
+    background-color: blue;
+
+  }
+
+  .day,
+  .icon,
+  .temp,
+  .pollen {
+    width: 100%;
+  }
+}
