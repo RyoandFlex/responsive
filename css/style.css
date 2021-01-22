@@ -24,6 +24,8 @@ body {
 
 article {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   border-top: 2px solid black;
   align-items: center;
   padding: 15px;
@@ -68,8 +70,11 @@ main {
 }
 
 footer {
+  position: absolute;
   float: left;
   width: 100%;
+  text-align: center;
+  bottom: 0;
 }
 
 .day,
@@ -85,13 +90,11 @@ footer {
   font-weight: 700;
 }
 
-@media screen and (min-width:780px) {
+@media screen and (min-width:800px) {
   .article {
     flex-direction: column;
     width: 12vw;
     justify-content: space-between;
-    background-color: blue;
-
   }
 
   .day,
@@ -99,5 +102,23 @@ footer {
   .temp,
   .pollen {
     width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .temp {
+    font-size: 1em;
+  }
+
+  .day1,
+  .day2,
+  .day3,
+  .day4,
+  .day5,
+  .day6,
+  .day7 {
+    width: 12vw;
+    float: left;
+    padding: 10px;
   }
 }
