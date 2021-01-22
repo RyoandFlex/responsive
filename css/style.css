@@ -82,7 +82,8 @@ header>img {
   top: 30%;
 }
 
-#h1I {
+#h1I,
+#h1I2 {
   font-size: 5em;
 }
 
@@ -98,7 +99,8 @@ header>img {
   justify-content: center;
 }
 
-#h1G {
+#h1G,
+#h1G1 {
   padding-bottom: 10px;
 }
 
@@ -108,7 +110,7 @@ header>img {
   padding-bottom: 10px;
 }
 
-#bloc>img {
+.col-xs-12>img {
   float: left;
   width: 120px;
   height: auto;
@@ -268,7 +270,7 @@ footer {
     margin-left: 15%;
   }
 
-  .fas {
+  #burger {
     display: none;
   }
 }
@@ -331,7 +333,7 @@ footer {
     margin-left: 15%;
   }
 
-  .fas {
+  #burger {
     display: none;
   }
 
@@ -401,7 +403,7 @@ footer {
     margin-left: 15%;
   }
 
-  .fas {
+  #burger {
     display: none;
   }
 
@@ -426,6 +428,14 @@ footer {
 
 .headerW {
   float: left;
+}
+
+#h1W,
+#h2W {
+  padding-left: 20px;
+  text-align: start;
+  float: left;
+  width: 100%;
 }
 
 section {
