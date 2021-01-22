@@ -93,21 +93,39 @@ footer {
 @media screen and (min-width:800px) {
   .article {
     flex-direction: column;
-    width: 12vw;
-    justify-content: space-between;
+    flex-grow: 1;
   }
 
   .day,
   .icon,
   .temp,
   .pollen {
-    width: 100%;
     display: inline-block;
     text-align: center;
   }
 
   .temp {
     font-size: 1em;
+  }
+
+  .icon {
+    width: 100%;
+  }
+
+  .day {
+    font-size: .8em;
+    padding-bottom: 10px;
+  }
+
+  .temp {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: .9em;
+  }
+
+  .pollen {
+    font-size: .9em;
   }
 
   .day1,
@@ -117,7 +135,7 @@ footer {
   .day5,
   .day6,
   .day7 {
-    width: 12vw;
+    width: 14vw;
     float: left;
     padding: 10px;
   }
